@@ -17,22 +17,27 @@
     <Button
         android:id="@+id/movies"
         style="@style/myButton"
-        android:text="@string/movie" />
+        android:text="@string/movie"
+        android:onClick="btnClick"/>
     <Button
         android:id="@+id/stock"
         style="@style/myButton"
-        android:text="@string/stock" />
+        android:text="@string/stock"
+        android:onClick="btnClick"/>
     <Button
         android:id="@+id/reader"
         style="@style/myButton"
-        android:text="@string/reader" />
+        android:text="@string/reader"
+        android:onClick="btnClick"/>
     <Button
         android:id="@+id/news"
         style="@style/myButton"
-        android:text="@string/news" />
+        android:text="@string/news"
+        android:onClick="btnClick"/>
     <Button
         android:id="@+id/capstone"
         style="@style/myButton"
-        android:text="@string/capstone" />
+        android:text="@string/capstone"
+        android:onClick="btnClick"/>
 
 </LinearLayout>

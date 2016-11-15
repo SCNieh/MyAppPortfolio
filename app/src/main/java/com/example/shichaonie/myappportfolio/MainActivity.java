@@ -6,28 +6,41 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
 public class MainActivity extends AppCompatActivity {
+    private Toast mToast = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setListeners(R.id.movies);
-        setListeners(R.id.stock);
-        setListeners(R.id.reader);
-        setListeners(R.id.news);
-        setListeners(R.id.capstone);
 
     }
-    private void setListeners(int btnId){
-        Button myButton = (Button) findViewById(btnId);
-        String btnText = myButton.getText().toString();
-        final String toastText = "This button will launch my " + btnText + " apps!";
-        myButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, toastText, Toast.LENGTH_SHORT).show();
-            }
-        });
+
+    public void btnClick(View view){
+        Button mBtn = (Button) view;
+        switch (view.getId()){   //Wait for access to each app, accomplish switch-case late;
+            case R.id.movies:
+                break;
+            case R.id.stock:
+                break;
+            case R.id.reader:
+                break;
+            case R.id.news:
+                break;
+            case R.id.capstone:
+                break;
+        }
+        String btnText = mBtn.getText().toString();
+        String toastText = "This button will launch my " + btnText + " apps!";
+        show(toastText);
+    }
+    public void show(String msg){
+        if(mToast == null){
+            mToast = Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT);
+        }else {
+            mToast.setText(msg);
+        }
+        mToast.show();
     }
 
 }
