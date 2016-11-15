@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shichaonie.myappportfolio.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/movies"
+        style="@style/myButton"
+        android:text="@string/movie" />
+    <Button
+        android:id="@+id/stock"
+        style="@style/myButton"
+        android:text="@string/stock" />
+    <Button
+        android:id="@+id/reader"
+        style="@style/myButton"
+        android:text="@string/reader" />
+    <Button
+        android:id="@+id/news"
+        style="@style/myButton"
+        android:text="@string/news" />
+    <Button
+        android:id="@+id/capstone"
+        style="@style/myButton"
+        android:text="@string/capstone" />
+
+</LinearLayout>
